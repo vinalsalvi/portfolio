@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protfolio</title>
+    <title>Vinal Salvi - Protfolio</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awsome file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
@@ -26,451 +33,361 @@
 
         <!-- Header Section start -->
         <nav class="navbar navbar-expand-lg nav-sec navbar-dark">
-            <div class="container-fluid" style="color: #4e5180;">
+            <div class="container-fluid  nav-sec-first">
                 <a class="navbar-brand" href="#">
-                    <h3 class="ms-5 mt-2" style="font-weight: 700; color: #4e5180;  ">
-                        SALVI<br />VINAL</h3>
+                    <h3 class="mt-2" style="font-size: 40px; font-weight: 900; color: #4e5180;">Vinal</h3>
                 </a>
                 <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-                    <div class="navbar-nav links ms-5 mb-2">
-                        <a class="nav-link active ms-5" aria-current="page" href="#home" style="color:#4e5180;">Home</a>
+                    <div class="mb-3 navbar-nav links">
+                        <!-- <a class="nav-link active" aria-current="page" href="#home" style="color:#4e5180;">Home</a> -->
                         <a class="nav-link active" aria-current="page" href="#about" style="color:#4e5180;">About</a>
                         <a class="nav-link active" aria-current="page" href="#skills" style="color:#4e5180;">Skills</a>
-                        <a class="nav-link active" aria-current="page" href="#Education"
-                            style="color:#4e5180;">Education</a>
-                        <a class="nav-link active" aria-current="page" href="#project"
-                            style="color:#4e5180;">Projects</a>
-                        <a class="nav-link active" aria-current="page" href="#contact"
-                            style="color:#4e5180;">Contact</a>
+                        <a class="nav-link active" aria-current="page" href="#Education"style="color:#4e5180;">Education</a>
+                        <a class="nav-link active" aria-current="page" href="#project"style="color:#4e5180;">Projects</a>
+                        <a class="nav-link active" aria-current="page" href="#Certificate" style="color:#4e5180;">Certificate</a>
+                        <a class="nav-link active" aria-current="page" href="#contact"style="color:#4e5180;">Contact</a>
                     </div>
                 </div>
-                <a class="d-lg-none d-sm-block" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                    aria-controls="offcanvasExample">
+                <a id="navToggleBtn" class="d-lg-none d-sm-block " data-bs-toggle="offcanvas" href="#offcanvasExample"
+                    role="button" aria-controls="offcanvasExample">
                     <span class="fa fa-bars" style="font-size: 1.5rem; color: rgb(85, 85, 85);"></span>
                 </a>
             </div>
         </nav>
         <!-- Header Section end -->
 
+        <!-- navbar panel section -->
         <div class="offcanvas">
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
                 aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header" style="background-color: rgb(215, 225, 236)">
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
+                    <button type="button" class="btn-close text-reset d-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body text-light">
                     <ul class="links">
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#Education">Education</a></li>
-                        <li><a href="#Projects">Projects</a></li>
-                        <li><a href="#Contact">Contact</a></li>
+                        <li><a href="#project">Projects</a></li>
+                         <li><a href="#Certificate">Certificate</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/salvivinal" target="_blank" aria-label="LinkedIn Profile">
+                            <img class="linkedin" src="image\in.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://github.com/vinalsalvi" target="_blank" aria-label="GitHub Profile">
+                            <img src="image\git.png" alt="GitHub">
+                        </a>
+                        <a href="mailto:salvivinal982@gmail.com" target="_blank" aria-label="Email Address">
+                            <img src="image\mail.png" alt="Email">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- navbar panel section end -->
 
-        <!-- Hero Section start-->
-        <div class="container-fluid hero-sec" id="home">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="hero-content-sec">
-                            <div style="margin-top: 100px;">
-                                <h5 style="color: #4e5180; font-size: 17px;">Hi, I'm</h5>
-                                <h1 style="font-weight: 700;font-size: 3rem; color: #151b54;">Vinal Salvi</h1>
-                                <h1 style="color: #342d7e; font-size: 30px;">Web Applications Developer</h1>
-                                <button class="my-btn mt-2">
-                                    <a href="#contact">
-                                        <span class="">Contact Me</span>
-                                    </a>
-                                </button>
-                                <button class="my-btn mt-2"><a
-                                        href="image\WebApplication_Devloper-Vinal_Salvi_Resume.pdf"
-                                        download>Download
-                                        Cv</a></button>
-                            </div>
-                        </div>
+        <!-- hero section start -->
+        <section id="home" class="flex items-center justify-center min-h-screen text-center hero-sec">
+            <div class="container hero-sec1" data-aos="fade-left">
+                <!-- Hero contact Added Here -->
+                <div class="hero-content-sec">
+                    <div class="animated-text-container static-text-group">
+                        <p id="static-line-1"></p>
+                        <h1 id="static-line-2"></h1>
+                        <h2 id="static-line-3"></h2>
                     </div>
-                    <div class="col-md-6">
-                        <div class="img-sec pe-5">
-                            <img src="image\head.png" style="height: 560px; width: 100%;">
-                        </div>
+                    <div class="animated-text-container looping-text-group">
+                        <h3 id="looping-line"></h3>
+                    </div>
+                    <div class="hero-buttons flex justify-center mb-3">
+                        <button class="my-btn mb-5 mt-2 me-1">
+                            <a href="#contact">
+                                <span class="">Contact Me</span>
+                            </a>
+                        </button>
+                        <!-- <button class="my-btn mb-5 mt-2"><a href="image\WebApplication_Devloper-Vinal_Salvi_Resume.pdf"
+                                download>Download CV</a>
+                        </button> -->
                     </div>
                 </div>
+                <!-- Hero Image Added Here -->
+                <div class="img-sec">
+                    <img src="image/Digital nomad-cuate.svg" style="width: 100%;" alt="Profile"
+                        data-aos="zoom-in" data-aos-delay="200">
+                </div>
             </div>
-        </div>
+        </section>
         <!-- Hero Section end-->
 
-        <!-- About section start -->
-        <div class="container-fluid about-sec" id="about">
-            <div class="container">
-                <div class="row">
-                    <h1 class="mt-5 mb-0 text-center" style="font-weight: 700;color: #342d7e; font-size: 60px;">About
-                    </h1>
+        <!-- About Section -->
+        <section id="about" class="flex items-center justify-center min-h-screen about-sec">
+            <div class="container about-sec1" data-aos="fade-up">
+                <div class="about-img-sec">
+                    <!-- Placeholder image for profile picture -->
+                    <img class="mb-5" src="image/Code review-amico.svg" alt="Profile">
+                </div>
+                <div class="about-content-sec" data-aos="fade-right">
+                    <h2>About</h2>
+                    <p>
+                        I graduated with a BSC in Information Technology and am currently pursuing my Master’s
+                        degree in MSCIT. I'm a highly skilled Python Developer with 1 year of hands-on
+                        experience in backend development. My expertise includes working with MySQL and Oracle
+                        databases, analyzing processes, and crafting innovative solutions for real-world
+                        problems.
+                        In addition to backend proficiency, I have built dynamic and scalable web applications
+                        using HTML, CSS, and JavaScript. I’ve also developed projects using React.js,
+                        particularly focusing on fetching and displaying real-time data via APIs demonstrating
+                        my ability to integrate modern frontend frameworks with backend logic.
+                    </p>
+                    <p>
+                        I am passionate about delivering seamless user experiences, writing clean and
+                        maintainable code, and continuously learning new technologies.
+                    </p>
+                    <p>
+                        Eager to contribute and grow in a Full-Stack Development role where I can apply my
+                        knowledge of Python, JS, React, and APIs to build impactful digital solutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- About section end -->
 
-                    <div class="col-md-5">
-                        <div class="about-img-sec">
-                            <img src="image\about.png">
-                        </div>
+        <!-- Skills Section -->
+        <section id="skills" class="flex min-h-screen skill-sec">
+            <div class="container skill-sec1" data-aos="fade-up">
+                <div class="skill-content-sec mb-5" data-aos="fade-left">
+                    <h2>Skills</h2>
+                    <p>As of this moment I'm currently learning best coding principle such
+                        as React.js and MongoDB</p>
+                    <p>Soon enough I will learn Backend Development to become a Full Stack Developer.</p>
+                    <p>These are the Tech Stack Tools I use as a developer in designing, creating and
+                        establishing development projects.</p>
+                </div>
+                <div class="skills-grid zoom-in">
+                    <div class="skill-item">
+                        <img class="mb-3"
+                            src="https://s.yimg.com/fz/api/res/1.2/VRd5d.DjKWj2kBFLMst68g--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI2MDtxPTgwO3c9MjYw/https://s.yimg.com/zb/imgv1/0f0f5a05-3ee9-3b18-a598-0c0b40125d45/t_500x300">
+                        <p>Python</p>
                     </div>
+                    <div class="skill-item">
+                        <img class="mb-3"
+                            src="https://images.seeklogo.com/logo-png/39/1/django-logo-png_seeklogo-394570.png">
+                        <p>Django</p>
+                    </div>
+                    <div class="skill-item">
+                        <img class="mb-3"
+                            src="https://images.seeklogo.com/logo-png/50/1/sql-logo-png_seeklogo-505247.png">
+                        <p>SQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <img class="mb-3" src="https://erysmozo.vercel.app/assets/mysql.85641cac.svg">
+                        <p>MySQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <img class="mb-3" src="https://erysmozo.vercel.app/assets/html.f884d301.svg">
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill-item">
+                        <img class="mb-3" src="https://erysmozo.vercel.app/assets/css.1beff86c.svg">
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill-item">
+                        <img class="mb-3" src="https://erysmozo.vercel.app/assets/javascript.3691c274.svg">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <img class="mb-3" src="https://erysmozo.vercel.app/assets/react.302a559b.svg">
+                        <p>React.js</p>
+                    </div>
+                    <div class="skill-item">
+                        <img class="mb-3"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfAIYs9_uyJWXsEgyC-WW7THiWRoNOy3E9tQ&s">
+                        <p>bootstrap</p>
+                    </div>
+                    <div class="skill-item">
+                        <img class="mb-3" src="	https://erysmozo.vercel.app/assets/git.d59a2cfd.svg">
+                        <p>Git</p>
+                    </div>
+                    <div class="skill-item">
+                        <img class="mb-3" src="https://erysmozo.vercel.app/assets/github.df940d40.svg">
+                        <p>GitHub</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://erysmozo.vercel.app/assets/vscode.522c3864.svg">
+                        <p>VSCode</p>
+                    </div>
+                </div>
+                <div class="skills-image multidevice mt-4">
+                    <img class="mt-5 mb-5" src="image/scrum method-rafiki.svg">
+                </div>
 
-                    <div class="col-md-7 pe-5">
-                        <div class="about-content-sec" style="color: rgb(85, 85, 85); font-size: 17px;">
-                            <p>
-                                I graduated with a BSC in Information Technology and am currently pursuing my Master’s
-                                degree in MSCIT. I'm a highly skilled Python Developer with 1 year of hands-on
-                                experience in backend development. My expertise includes working with MySQL and Oracle
-                                databases, analyzing processes, and crafting innovative solutions for real-world
-                                problems.
-                                In addition to backend proficiency, I have built dynamic and scalable web applications
-                                using HTML, CSS, and JavaScript. I’ve also developed projects using React.js,
-                                particularly focusing on fetching and displaying real-time data via APIs—demonstrating
-                                my ability to integrate modern frontend frameworks with backend logic.</p>
-
-                            <p>
-                                I am passionate about delivering seamless user experiences, writing clean and
-                                maintainable code, and continuously learning new technologies. </p>
-                            <p>
-                                Eager to contribute and grow in a Full-Stack Development role where I can apply my
-                                knowledge of Python, JS, React, and APIs to build impactful digital solutions.
+                <!-- Education Section (Placeholder) -->
+                <section id="Education" class="flex items-center justify-center min-h-screen education-sec m-0 p-0">
+                    <div class="container education-sec1 mb-0" data-aos="fade-up">
+                        <h2>Education</h2>
+                        <p class="skill-title-content mb-5">A brief overview of my academic journey.</p>
+                        <div class="text-lg max-w-2xl mx-auto shadow p-4 mb-5 bg-body box1">
+                            <h1>BSCIT - (Bachelor of Science in Information Technology)</h1>
+                            <p><i class="fa-solid fa-building-columns me-3" style="color: #342d7e;"></i>Gujrat University</p>
+                            <p><i class="fa-solid fa-calendar-days me-3" style="color: #342d7e;"></i>July 2021 – May 2024</p>
+                        </div>
+                        <div class="text-lg max-w-2xl mx-auto shadow p-4 mb-5 bg-body box1">
+                            <h1>Backend Developer - intern</h1>
+                            <p><i class="fa-solid fa-building-columns me-3" style="color: #342d7e;"></i> CreArt Solutions - Ahmedabad</p>
+                            <p><i class="fa-solid fa-calendar-days me-3" style="color: #342d7e;"></i> July 2023 – April 2024</p>
+                        </div>
+                        <div class="text-lg max-w-2xl mx-auto shadow p-4 mb-1 bg-body box1">
+                            <h1>MSCIT - (Master of Science in Information Technology)</h1>
+                            <p><i class="fa-solid fa-building-columns me-3" style="color: #342d7e;"></i>Gujrat University</p>
+                            <p><i class="fa-solid fa-calendar-days me-3" style="color: #342d7e;"></i>July 2024 - Present
                             </p>
                         </div>
                     </div>
-                </div>
+                </section>
+                <!-- education section end -->
             </div>
-        </div>
-        <!-- About section end -->
+        </section>
+        <!-- skill section end -->
 
-        <!-- Skills Section start -->
-        <div class="container-fluid skill-sec" id="skills">
-            <div class="container">
-                <div class="row g-0 justify-content-center mb-5 ms-5">
-                    <h1 style="font-weight: 700;color: #342d7e; font-size: 60px;" class="mt-4">Skills
-                    </h1>
-                    <div class="pe-5" style="color: rgb(85, 85, 85); font-size: 17px;">
-                        <p>As of this moment I'm currently learning best coding principle<br> such as React.js and
-                            MongoDB</p>
-                        <p>Soon enough I will learn Backend Development to become a Full Stack <br> Developer.</p>
-                        <p>These are the Tech Stack Tools I use as a developer in designing,<br> creating and
-                            establishing development projects.</p>
-                    </div>
-                    <div class="col-sm-12 col-lg-2 col-md-4">
-                        <div class="box mt-2">
-                            <div class="box-img">
-                                <img
-                                    src="https://s.yimg.com/fz/api/res/1.2/VRd5d.DjKWj2kBFLMst68g--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI2MDtxPTgwO3c9MjYw/https://s.yimg.com/zb/imgv1/0f0f5a05-3ee9-3b18-a598-0c0b40125d45/t_500x300">
-                            </div>
-                            <hr />
-                            <div class="box-content mt-2">
-                                <h4>Python</h4>
-                            </div>
+        <!-- Projects Section -->
+        <section id="project" class="flex items-center justify-center min-h-screen project-sec">
+            <div class="container project-sec1" data-aos="fade-up">
+                <h2 class="text-4xl mt-2 mb-0">Projects</h2>
+                <div class="projects-grid mt-0">
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <!-- Placeholder image for Project 1 -->
+                        <img src="image\trigoblyss.png" alt="Project">
+                        <div class="project-card-body">
+                            <h3>TrigoBlyss - Tours & Travel</h3>
+                            <p>A full-stack travel platform built with Python, Django and MySQL, offering secure booking
+                                and management of travel experiences with a responsive, user-friendly interface.</p>
+                            <a href="https://github.com/vinalsalvi/TrigoBlyss_Travel_and_Tourism_WebApplication"
+                                class="btn">VIEW CODE</a>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-2 col-md-4">
-                        <div class="box mt-2">
-                            <div class="box-img">
-                                <img src="https://static.djangoproject.com/img/logos/django-logo-negative.png"
-                                    style="height: 75px; width: 100px;">
-                            </div>
-                            <hr />
-                            <div class="box-content mt-2">
-                                <h4>Django</h4>
-                            </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <!-- Placeholder image for Project 2 -->
+                        <img src="image\chatbot.png" alt="Project">
+                        <div class="project-card-body">
+                            <h3>AI WhatsApp Chatbot</h3>
+                            <p>This project features an AI-powered WhatsApp bot built with Python and Flask, using Meta
+                                Cloud API for real-time message processing, intelligent responses.</p>
+                            <a href="https://github.com/vinalsalvi/AI_WhatsApp_Chatbot" class="btn">VIEW CODE</a>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-2 col-md-4">
-                        <div class="box mt-2">
-                            <div class="box-img">
-                                <img src="https://erysmozo.vercel.app/assets/html.f884d301.svg">
-                            </div>
-                            <hr />
-                            <div class="box-content mt-2">
-                                <h4>HTML5</h4>
-                            </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <!-- Placeholder image for Project 3 -->
+                        <img src="image/Recipes.png" alt="Project">
+                        <div class="project-card-body">
+                            <h3>Kocina - Recipes</h3>
+                            <p>Recipe Explorer is a modern React.js web application that helps users discover and view
+                                diverse recipes, with dynamic data fetched from public APIs and a responsive.</p>
+                            <a href="https://github.com/vinalsalvi/Recipe-Web_Application-" class="btn">VIEW CODE</a>
+                            <a href="https://jovial-bavarois-dcb3f8.netlify.app/" class="btn">VIEW Site</a>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-2 col-md-4">
-                        <div class="box mt-2">
-                            <div class="box-img">
-                                <img src="https://erysmozo.vercel.app/assets/css.1beff86c.svg">
-                            </div>
-                            <hr />
-                            <div class="box-content mt-2">
-                                <h4>CSS3</h4>
-                            </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <!-- Placeholder image for Project 4 -->
+                        <img src="image\currency conveter.png" alt="Project">
+                        <div class="project-card-body">
+                            <h3>Currency Converter</h3>
+                            <p>This simple and interactive web application enables real-time currency conversion using
+                                up-to-date
+                                exchange rates fetched from reliable external APIs.</p>
+                            <a href="https://github.com/vinalsalvi/Currency-Converter" class="btn bt">VIEW CODE</a>
+                            <a href="https://currency-converter-glmj.onrender.com" class="btn bt">VIEW Site</a>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-2 col-md-4">
-                        <div class="box mt-2">
-                            <div class="box-img">
-                                <img src="https://erysmozo.vercel.app/assets/javascript.3691c274.svg">
-                            </div>
-                            <hr />
-                            <div class="box-content mt-2">
-                                <h4>JAVASCRIPT</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-lg-2 col-md-4 ">
-                        <div class="box mt-2">
-                            <div class="box-img">
-                                <img src="https://erysmozo.vercel.app/assets/react.302a559b.svg">
-                            </div>
-                            <hr />
-                            <div class="box-content mt-2">
-                                <h4>REACT.JS</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-lg-2 col-md-4">
-                        <div class="box mt-2">
-                            <div class="box-img">
-                                <img
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfAIYs9_uyJWXsEgyC-WW7THiWRoNOy3E9tQ&s">
-                            </div>
-                            <hr />
-                            <div class="box-content mt-2">
-                                <h4>BOOTSTRAP 5</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-lg-2 col-md-4">
-                        <div class="box mt-2">
-                            <div class="box-img">
-                                <img src="https://erysmozo.vercel.app/assets/github.df940d40.svg">
-                            </div>
-                            <hr />
-                            <div class="box-content mt-2">
-                                <h4>GIT HUB</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-lg-2 col-md-4">
-                        <div class="box mt-2">
-                            <div class="box-img">
-                                <img src="https://erysmozo.vercel.app/assets/vscode.522c3864.svg">
-                            </div>
-                            <hr />
-                            <div class="box-content mt-2">
-                                <h4>VS CODE</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-lg-2 col-md-4">
-                        <div class="box mt-2">
-                            <div class="box-img">
-                                <img src="https://erysmozo.vercel.app/assets/mysql.85641cac.svg" style="height: 78px;">
-                            </div>
-                            <hr />
-                            <div class="box-content mt-2">
-                                <h4>MySQL</h4>
-                            </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <!-- Placeholder image for Project 5 -->
+                        <img src="image\circuit .png" alt="Project">
+                        <div class="project-card-body">
+                            <h3>AUTO ParkMaster</h3>
+                            <p>The IoT-based smart parking system automates and optimizes parking with real-time
+                                monitoring and includes light sensors that automatically activate white LEDs in
+                                darkness.</p>
+                            <a href="https://github.com/vinalsalvi/Auto_ParkMaster_IOT" class="btn">VIEW CODE</a>
                         </div>
                     </div>
                 </div>
+                <div class="skills-image multidevice mt-5">
+                    <img class="mt-5" src="image/Website Creator-cuate.svg">
+                </div>
+
+                <!-- Certificate Section (Placeholder) -->
+                <section id="Certificate" class="flex items-center justify-center min-h-screen certificate-sec m-0 p-0" style="min-height: 40vh;">
+                    <div class="container certificate-sec1 mb-0 mt-5" data-aos="fade-up">
+                        <h2 class="m-0">Certificate</h2>
+                        <p class="skill-title-content mt-3 mb-5">Certified in technical and professional skills, reflecting ongoing learning and growth.</p>
+                        <div class="certificate-grid mt-0">
+                            <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+                                <!-- Placeholder image for certificate 1 -->
+                                <img src="image/ISRO-MSAA_Certificate.jpg" alt="Certificate"
+                                    onclick="openPreview(this.src)">
+                            </div>
+                            <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+                                <!-- Placeholder image for certificate 2 -->
+                                <img src="image/AWS_LLMs_Certificate.jpg" alt="Certificate"
+                                    onclick="openPreview(this.src)">
+                            </div>
+                            <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+                                <!-- Placeholder image for certificate 3 -->
+                                <img src="image/CreArt Internship Certificate2.jpg" style="height: 275px;"
+                                    alt="Certificate" onclick="openPreview(this.src)">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fullscreen preview -->
+                    <div class="overlay" id="imageOverlay">
+                        <span class="close-btn" onclick="closePreview()">×</span>
+                        <img id="fullImage" src="" alt="Full Certificate">
+                    </div>
+                </section>
+                <!--  Certificate section end -->
             </div>
-        </div>
-        <!-- Skills Section end -->
 
-        <!-- Education section start  -->
-        <div class="main">
-            <div class="container-fluid education-sec" id="Education">
-                <div class="container">
-                    <div class="row pe-5">
-                        <h1 style="font-weight: 700;color: #342d7e; font-size: 60px; " class="mt-5 ms-5 mb-4">Education
-                        </h1>
+        </section>
 
-                        <div class="col-md-12 ms-5">
-                            <div class="shadow p-3 mb-5 bg-body rounded box1 ">
-                                <p>BSCIT(Bachelor of Science in Information Technology)</p>
-                                <p>Gujrat University</p>
-                                <p>July 2021 – May 2024</p>
-                            </div>
+        <!-- contact Section  -->
+        <section id="contact" class="flex items-center justify-center min-h-screen contact-sec">
+            <div class="container contact-sec1" data-aos="fade-up">
+                <!-- New wrapper for content and image to be in a row on desktop, column on mobile -->
+                <div class="contact-sec2">
+                    <div class="contact-content-sec animate-left" data-aos="fade-right">
+                        <p class="get">- Get in Touch</p>
+                        <h2>Let's create progress together</h2>
+                        <p>For all inquiries, you can contact and message me on any of the specified social medias below.
+                        </p>
+                        <div class="social2 mb-5 p-0">
+                            <a href="https://www.linkedin.com/in/salvivinal" target="_blank"
+                                aria-label="LinkedIn Profile">
+                                <img src="image/in.png" alt="LinkedIn">
+                            </a>
+                            <a href="https://github.com/vinalsalvi" target="_blank" aria-label="GitHub Profile">
+                                <img src="image/git.png" alt="GitHub">
+                            </a>
+                            <a href="mailto:salvivinal982@gmail.com" target="_blank" aria-label="Email Address">
+                                <img src="image/mail.png" alt="Email">
+                            </a>
+                            <a href="https://wa.me/8128744264" target="_blank" aria-label="WhatsApp Message">
+                                <img src="image/wapp.png" alt="WhatsApp">
+                            </a>
                         </div>
-
-                        <div class="col-md-12  ms-5">
-                            <div class="shadow p-3 mb-5 bg-body rounded box1">
-                                <p>Backend Developer- intern</p>
-                                <p> CreArt Solutions- Ahmedabad</p>
-                                <p> July 2023 – April 2024</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12  ms-5">
-                            <div class="shadow p-3 mb-5 bg-body rounded box1">
-                                <p>MSCIT( Master of Science in Information Technology)</p>
-                                <p>Gujrat University</p>
-                                <p>July 2024 - Present</p>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="contact-img-sec animate-left">
+                        <!-- Placeholder image for profile picture -->
+                        <img class="mb-5 mt-5" src="image/Messaging fun-amico.svg" alt="Profile">
                     </div>
                 </div>
+                <p class="copy mt-3 mb-0 p-0">Copyright &copy; 2025 Vinal Salvi. All Rights Reserved.</p>
             </div>
-            <!-- Education section end  -->
+        </section>
+        <!-- contact section end -->
 
-            <!-- Project section start -->
-            <div class="container-fluid project-sec" id="project">
-                <div class="container ">
-                    <h1 class="text-center mb-3" style="font-size: 60px; font-weight: 700; color: #342d7e;"> Projects
-                    </h1>
-                    <div class="row project-sec">
-
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="image\trigoblyss.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3>TrigoBlyss - Tours & Travel</h3>
-                                    <div class="sec">
-                                        <p class="card-text" style="text-align: justify;">
-                                            This is a full-stack platform designed to simplify the process of planning,
-                                            booking, and managing travel experiences. Built using Django, ensures a
-                                            secure, and efficient backend using MySQL, while the frontend provides a
-                                            responsive and user-friendly interface.</p>
-                                    </div>
-                                    <a href="https://github.com/vinalsalvi/TrigoBlyss_Travel_and_Tourism_WebApplication"
-                                        class="btn btn-dark">Visite
-                                        Code</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="image\currency conveter.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3>Currency converter</h3>
-                                    <div class="sec">
-                                        <p class="card-text" style="text-align: justify;">
-                                            This project is a simple and interactive web application that allows users
-                                            to convert amounts between different currencies in real-time. It fetches the
-                                            latest exchange rates from reliable external APIs to provide accurate and
-                                            up-to-date currency conversion.</p>
-                                    </div>
-                                    <div class="ln">
-                                        <a href="https://github.com/vinalsalvi/Currency-Converter" class="btn btn-dark"
-                                            style="margin-right: 15px;">Visite
-                                            Code</a>
-                                        <a href="https://currency-converter-glmj.onrender.com"
-                                            class="btn btn-dark">Visite
-                                            Site</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="text-align: justify;width: 100%;">
-                                <img src="image/Recipes.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3>Kocina - Recipes</h3>
-                                    <div class="sec">
-                                        <p class="card-text">Recipe Explorer is a modern web application designed to
-                                            help users discover, and view a wide variety of recipes. Built using
-                                            React.js, it offers responsive and interactive user-friendly navigation and
-                                            visual appeal. The Recipe data are dynamically fetched using public APIs.
-                                        </p>
-                                    </div>
-                                    <a href="https://github.com/vinalsalvi/Recipe-Web_Application-" class="btn btn-dark"
-                                        style="margin-right: 15px;">Visite Code</a>
-                                    <a href="https://jovial-bavarois-dcb3f8.netlify.app/" class="btn btn-dark">Visite
-                                        Site</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="text-align: justify;width: 100%;">
-                                <img src="image\chatbot.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3>AI WhatsApp Chatbot</h3>
-                                    <div class="sec">
-                                        <p class="card-text" style="text-align: justify;">
-                                            This project contains intelligent, user-friendly, and efficient AI system
-                                            that developed using Python and Flask. Leveraging the Meta Cloud API, it
-                                            includes responsive and interactive WhatsApp bot capable of real-time
-                                            message processing and AI-driven responses.</p>
-                                    </div>
-                                    <a href="https://github.com/vinalsalvi/AI_WhatsApp_Chatbot"
-                                        class="btn btn-dark">Visite
-                                        Code</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="text-align: justify;width: 100%;">
-                                <img src="image\circuit .png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3>AUTO ParkMaster</h3>
-                                    <div class="sec">
-                                        <p class="card-text" style="text-align: justify;">
-                                            IoT-based smart parking system focuses on automating and optimizing the
-                                            vehicle parking experience using
-                                            real-time monitoring and control systems. Also, add the light functionality
-                                            that detects darkness and
-                                            automatically turns ON white LED lights.</p>
-                                    </div>
-                                    <a href="https://github.com/vinalsalvi/Auto_ParkMaster_IOT"
-                                        class="btn btn-dark">Visite
-                                        Code</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- Project section end -->
-
-        <!-- Contact section start -->
-        <div class="container-fluid contact-sec" id="contact">
-            <div class="container">
-                <div class="row ms-6">
-                    <h1 style="font-weight: 700; color: #151b54;" class="mt-5"> -Get in Touch</h1>
-                    <div class="detail col-md-6">
-                        <div class="cont-info mt-4">
-                            <p><a href="mailto: salvivinal982@gmail.com"
-                                    style="text-decoration: none;color: #4e5180;"><i class="fa fa-envelope link"
-                                        id="icon" style="font-size: 20px;"></i><span class="ms-3"
-                                        style="font-size: 20px;">salvivinal982@gmail.com</span>
-                                </a></p>
-                            <p><a href="tel:+91 8128744264" style="text-decoration: none;color:#4e5180;"><i
-                                        class="fa fa-phone" id="icon" style="font-size: 20px;"></i>
-                                    <span class="ms-3" style="font-size: 20px;">+91 8128744264</span></p></a>
-                            <p style="color: #4e5180;"><i class="fa fa-map-marker" id="icon"
-                                    style="font-size: 20px;"></i><span class="ms-3" style="font-size: 20px;">Ahmedabad,
-                                    India</span></p>
-
-                            <div class="mt-5">
-                                <a href="https://www.linkedin.com/in/salvivinal" class="text-decoration-none"><i
-                                        class="fa fa-brands  fa-linkedin-square" id="icon"
-                                        style="color: #342d7e;font-size: 40px;"></i><b class="ms-3 fs-2"
-                                        style="color: #342d7e;">LinkedIn</b></a>
-                                <p class="mt-2"><a href="https://github.com/vinalsalvi" class="text-decoration-none"><i
-                                            class="fa fa-brands fa-github" id="icon"
-                                            style="color: #342d7e;font-size: 40px;"></i><b class="ms-3 fs-2 "
-                                            style="color: #342d7e;">GitHub</b></a>
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="contact-sec-img ms-5">
-                            <img src="image\footer.png" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr style="color: white;" class="mt-0">
-            <div class="copyright">
-                <p>Copyright <i class="fa fa-solid fa-copyright"></i>Salvi Vinal</p>
-            </div>
-        </div>
-        <!-- Contact section end -->
-
-        <!--  -->
+        <!-- scroll button -->
         <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">
             <i class="fa fa-arrow-up"></i>
         </button>
@@ -478,17 +395,21 @@
         <!-- bootstrap js -->
         <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
         <script src="./script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
     </div>
 
+    <script>
+        function openPreview(src) {
+            document.getElementById("fullImage").src = src;
+            document.getElementById("imageOverlay").style.display = "flex";
+        }
+
+        function closePreview() {
+            document.getElementById("imageOverlay").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
-
-
-<!-- <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="a7d9f859-f0dd-4951-94df-f2fa17204620" />
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="email" name="email" placeholder="Email" class="mt-3" required>
-            <textarea name="message" placeholder="Message" class="mt-3" rows="5" required></textarea>
-        <button type="submit" class="my-btn1">Submit</button>
-</form> -->
